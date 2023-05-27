@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flames</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <nav class="navbar fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:5000/">FLAMES</a>
+      </div>
+    </nav>
+    <form action="/check_flames" method="POST">
+        <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="Couple1" id='name' required />
+                    <label for="name" class="form__label">Your Name</label>
+                </div>
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="Couple2" id='name' required />
+                    <label for="name" class="form__label">Your Partner Name</label>
+                </div>
+                <div>
+                    <button type="submit" class="submit-btn">Flames</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <figure class="slideshow">
+            <img class="slide" src="{{ url_for('static', filename='images/intro1.png') }}" alt="Image" width="auto" height="600">
+            <img class="slide" src="{{ url_for('static', filename='images/intro2.png') }}" alt="Image" width="auto" height="600">
+            <img class="slide" src="{{ url_for('static', filename='images/intro3.png') }}" alt="Image" width="auto" height="600">
+            <img class="slide" src="{{ url_for('static', filename='images/intro4.png') }}" alt="Image" width="auto" height="600">
+        </figure>
+    </form>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>
