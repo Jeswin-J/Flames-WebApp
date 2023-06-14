@@ -132,7 +132,7 @@ div{
 }
 
 .form__field{
-	&:required,&:invalid { box-shadow:none; }
+	&:required, &:invalid { box-shadow:none; }
 }
 
 .slideshow {

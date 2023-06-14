@@ -37,8 +37,6 @@ def check_flames():
         couple1 = request.args.get('Couple1')
         couple2 = request.args.get('Couple2')
 
-
-    #processing side especially for sorting , rearranging ,refactoring
     strcouple1 , strcouple2 = couple1,couple2
     couple1 = couple1.lower()
     couple2 = couple2.lower()
@@ -98,8 +96,7 @@ def check_flames():
     return res
 
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug = True)
     
     
