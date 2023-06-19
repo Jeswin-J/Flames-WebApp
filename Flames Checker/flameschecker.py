@@ -50,10 +50,18 @@ def check_flames():
     couple1.sort()
     couple2.sort()
 
-    for char1,char2 in zip(couple1,couple2):
-        if char1 == char2:
-            couple1.remove(char1)
-            couple2.remove(char1)
+    
+    
+    # Striking the Letter matches in couple1 and couple2
+    for letter in couple1:
+        if letter in couple2:
+            couple1.remove(letter)
+            couple2.remove(letter)
+    
+    for letter in couple2:
+        if letter in couple1:
+            couple1.remove(letter)
+            couple2.remove(letter)
 
     # total no from the process side        
     total = len(couple1) + len(couple2)
