@@ -161,6 +161,9 @@ div{
 	.slideshow {
 	display: none !important;
 	}
+	.result {
+		background-size: contain !important;
+	  }
 }
 
 #image-container {
