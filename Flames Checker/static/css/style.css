@@ -157,9 +157,9 @@ div{
 	margin-left: 40px;
 }
 
-@media screen and (max-width: 767px) {
-	.slide {
-	display: none;
+@media (max-width: 1124px) {
+	.slideshow {
+	display: none !important;
 	}
 }
 
