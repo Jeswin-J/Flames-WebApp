@@ -3,7 +3,7 @@
 ## Description
 The Flames game is a popular game that predicts the relationship between two people. The name "FLAMES" is an acronym representing the six possible outcomes: Friends, Lovers, Affectionate, Marriage, Enemies, and Siblings. This game involves taking the names of two individuals as input and performing a series of calculations to determine the outcome.
 
-[Site](https://clouddev.pythonanywhere.com/)
+[Output Site](https://clouddev.pythonanywhere.com/)
 
 ## Program Steps
 Program follow these steps:
